@@ -11,7 +11,6 @@
    ========================================================================== */
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
     background-image: url('../img/handmadepaper.png');
@@ -74,18 +73,20 @@ textarea {
    OSTB Styling
    ========================================================================== */
 
-.wrapper {
-    max-width: 920px;
-    margin: 0 auto;
-}
+.wrapper { max-width: 920px; margin: 0 auto; }
 
-h1, h2, h3 {
-    font-family: 'Merriweather', serif;
-}
+.nav       { list-style: none; margin: 0; font-weight: 300; }
+.primary   { font-size: 1.2em; }
+.secondary { font-size: 1.05em; }
+.meta      { font-size: .875em; }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-}
+.left   { float: left; }
+.right  { float: right; }
+.clear  { clear: both; }
+.hidden { visibility: hidden; }
+
+h1, h2, h3 { font-family: 'Merriweather', serif; }
+p { font-family: 'Open Sans', sans-serif; }
 
 
 
