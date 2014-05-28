@@ -2,12 +2,6 @@ var svg = d3.select('#triangle').append('svg')
   .attr('width', '100%')
   .attr('height', 300);
 
-var hyp = 200;
-var xside = 100;
-var yside = function() {
-  return Math.sqrt(hyp * hyp - xside * xside);
-};
-
 var triData = function(xs, ys, hs) {
   if (xs > hs) {
     xs = hs;
@@ -44,4 +38,9 @@ var triTangle = new Tangle(document.getElementById("triangle-ctrl"), {
 
 
 
+var drag = d3.behavior.drag().on('drag', function() {
+  hypPoint.attr('cx', d3.event.x);
+  hypPoint.attr('cy', d3.event.y);
+});
 
+drag.call(hypPoint);
