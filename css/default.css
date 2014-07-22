@@ -88,13 +88,29 @@ textarea {
 h1, h2, h3 { font-family: 'Merriweather', serif; }
 p { font-family: 'Open Sans', sans-serif; }
 
+.interactive {
+    float: left;
+    background: #ddd;
+    padding: 0 auto;
+}
+
+.interactive > div {
+    float: left;
+    padding: 50px;
+}
 
 
 
 
 
+/* ==========================================================================
+   Custom Styling
+   ========================================================================== */
 
-
+#triangle {
+    width: 200px;
+    height: 200px;
+}
 
 
 
